@@ -344,7 +344,7 @@ class usercontrol extends base {
 		@header("Expires: 0");
 		@header("Cache-Control: private, post-check=0, pre-check=0, max-age=0", FALSE);
 		@header("Pragma: no-cache");
-		header("Content-type: application/xml; charset=utf-8");
+		header("Content-type: appsanmantech/xml; charset=utf-8");
 		$this->init_input(getgpc('agent'));
 		$uid = $this->input('uid');
 		if(empty($uid)) {

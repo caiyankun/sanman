@@ -415,7 +415,7 @@ IconIndex=1
 	} else {
 		$filename = diconv($filename, CHARSET, 'GBK');
 	}
-	dheader('Content-type: application/octet-stream');
+	dheader('Content-type: appsanmantech/octet-stream');
 	dheader('Content-Disposition: attachment; filename="'.$filename.'"');
 	echo $shortcut;
 	exit;
@@ -1386,7 +1386,7 @@ if($_GET['action'] == 'votepoll' && submitcheck('pollsubmit', 1)) {
 	$csvstr = ob_get_contents();
 	ob_end_clean();
 	header('Content-Encoding: none');
-	header('Content-Type: application/octet-stream');
+	header('Content-Type: appsanmantech/octet-stream');
 	header('Content-Disposition: attachment; filename='.$filename);
 	header('Pragma: no-cache');
 	header('Expires: 0');

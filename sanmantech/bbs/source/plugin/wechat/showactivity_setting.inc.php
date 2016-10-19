@@ -195,7 +195,7 @@ if(!$ac) {
 	}
 	ob_end_clean();
 	header('Content-Encoding: none');
-	header('Content-Type: application/octet-stream');
+	header('Content-Type: appsanmantech/octet-stream');
 	header('Content-Disposition: attachment; filename=showactivity_'.$_GET['tid'].'.csv');
 	header('Pragma: no-cache');
 	header('Expires: 0');

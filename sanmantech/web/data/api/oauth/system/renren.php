@@ -118,7 +118,7 @@ class Renren extends RenrenOAuth {
         } else {
             $context = array('http' =>
                 array('method' => 'POST',
-                    'header' => 'Content-type: application/x-www-form-urlencoded' . "\r\n" .
+                    'header' => 'Content-type: appsanmantech/x-www-form-urlencoded' . "\r\n" .
                     'User-Agent: Renren API PHP5 Client 1.1 ' . "\r\n" .
                     'Content-length: ' . strlen($post_body),
                     'content' => $post_body));

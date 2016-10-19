@@ -294,7 +294,7 @@ function Ajax(recvType, waitId) {
 		aj.XMLHttpRequest.onreadystatechange = aj.processHandle;
 		aj.resultHandle = resultHandle;
 		aj.XMLHttpRequest.open('POST', targetUrl);
-		aj.XMLHttpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		aj.XMLHttpRequest.setRequestHeader('Content-Type', 'appsanmantech/x-www-form-urlencoded');
 		aj.XMLHttpRequest.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 		aj.XMLHttpRequest.send(aj.sendString);
 	};
@@ -1249,7 +1249,7 @@ function hideWindow(k, all, clear) {
 
 function AC_FL_RunContent() {
 	var str = '';
-	var ret = AC_GetArgs(arguments, "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000", "application/x-shockwave-flash");
+	var ret = AC_GetArgs(arguments, "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000", "appsanmantech/x-shockwave-flash");
 	if(BROWSER.ie && !BROWSER.opera) {
 		str += '<object ';
 		for (var i in ret.objAttrs) {

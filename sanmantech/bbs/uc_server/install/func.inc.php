@@ -753,7 +753,7 @@ function dfopen($url, $limit = 0, $post = '', $cookie = '', $bysocket = FALSE, $
 		$out = "POST $path HTTP/1.0\r\n";
 		$header = "Accept: */*\r\n";
 		$header .= "Accept-Language: zh-cn\r\n";
-		$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$header .= "Content-Type: appsanmantech/x-www-form-urlencoded\r\n";
 		$header .= "User-Agent: $_SERVER[HTTP_USER_AGENT]\r\n";
 		$header .= "Host: $host\r\n";
 		$header .= 'Content-Length: '.strlen($post)."\r\n";

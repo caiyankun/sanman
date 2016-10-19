@@ -357,7 +357,7 @@ function getfiletype($filename = '') {
 			return 'image/pjpeg';
 		break;
 		case 'pdf':
-			return 'application/pdf';
+			return 'appsanmantech/pdf';
 		break;
 		case 'gif':
 			return 'image/gif';
@@ -375,16 +375,16 @@ function getfiletype($filename = '') {
 			return 'text/plain';
 		break;
 		case 'swf':
-			return 'application/x-shockwave-flash';
+			return 'appsanmantech/x-shockwave-flash';
 		break;
 		case 'zip':
-			return 'application/zip';
+			return 'appsanmantech/zip';
 		break;
 		case 'doc':
-			return 'application/msword';
+			return 'appsanmantech/msword';
 		break;
 		default:
-			return 'application/octet-stream';
+			return 'appsanmantech/octet-stream';
 		break;
 	}
 }

@@ -93,20 +93,20 @@ class Request
      * @var array 资源类型
      */
     protected $mimeType = [
-        'xml'  => 'application/xml,text/xml,application/x-xml',
-        'json' => 'application/json,text/x-json,application/jsonrequest,text/json',
-        'js'   => 'text/javascript,application/javascript,application/x-javascript',
+        'xml'  => 'appsanmantech/xml,text/xml,appsanmantech/x-xml',
+        'json' => 'appsanmantech/json,text/x-json,appsanmantech/jsonrequest,text/json',
+        'js'   => 'text/javascript,appsanmantech/javascript,appsanmantech/x-javascript',
         'css'  => 'text/css',
-        'rss'  => 'application/rss+xml',
-        'yaml' => 'application/x-yaml,text/yaml',
-        'atom' => 'application/atom+xml',
-        'pdf'  => 'application/pdf',
+        'rss'  => 'appsanmantech/rss+xml',
+        'yaml' => 'appsanmantech/x-yaml,text/yaml',
+        'atom' => 'appsanmantech/atom+xml',
+        'pdf'  => 'appsanmantech/pdf',
         'text' => 'text/plain',
         'png'  => 'image/png',
         'jpg'  => 'image/jpg,image/jpeg,image/pjpeg',
         'gif'  => 'image/gif',
         'csv'  => 'text/csv',
-        'html' => 'text/html,application/xhtml+xml,*/*',
+        'html' => 'text/html,appsanmantech/xhtml+xml,*/*',
     ];
 
     protected $content;

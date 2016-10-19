@@ -495,7 +495,7 @@ function getstatvars_forumstat($fid) {
 			@header("Expires: -1");
 			@header("Cache-Control: no-store, private, post-check=0, pre-check=0, max-age=0", FALSE);
 			@header("Pragma: no-cache");
-			@header("Content-type: application/xml; charset=utf-8");
+			@header("Content-type: appsanmantech/xml; charset=utf-8");
 			echo $xml;
 			exit;
 		}

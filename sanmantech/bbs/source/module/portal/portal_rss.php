@@ -46,7 +46,7 @@ if(is_array($_G['setting']['rewritestatus']) && in_array('portal_article', $_G['
 }
 
 $charset = $_G['config']['output']['charset'];
-dheader("Content-type: application/xml");
+dheader("Content-type: appsanmantech/xml");
 echo 	"<?xml version=\"1.0\" encoding=\"".$charset."\"?>\n".
 	"<rss version=\"2.0\">\n".
 	"  <channel>\n".

@@ -1573,7 +1573,7 @@ if(!$operation) {
 		cpmsg('NO_OPERATION');
 	}
 	dheader('Content-Disposition: attachment; filename='.$_GET['module'].$_GET['fn']);
-	dheader('Content-Type: application/octet-stream');
+	dheader('Content-Type: appsanmantech/octet-stream');
 	ob_end_clean();
 	echo $code;
 	define('FOOTERDISABLED' , 1);

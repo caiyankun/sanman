@@ -41,7 +41,7 @@
 		$context = array(
 	        'http'=>array(
 	            'method'=> 'POST',
-	            'header'=> 'Content-Type: application/x-www-form-urlencoded'."\r\n",
+	            'header'=> 'Content-Type: appsanmantech/x-www-form-urlencoded'."\r\n",
 	            'content'=> $data
 	        )
 	    );

@@ -871,7 +871,7 @@ function dfopen($url, $limit = 0, $post = '', $cookie = '', $bysocket = FALSE, $
 		$header = "Accept: */*\r\n";
 		$header .= "Accept-Language: zh-cn\r\n";
 		$boundary = $encodetype == 'URLENCODE' ? '' : '; boundary='.trim(substr(trim($post), 2, strpos(trim($post), "\n") - 2));
-		$header .= $encodetype == 'URLENCODE' ? "Content-Type: application/x-www-form-urlencoded\r\n" : "Content-Type: multipart/form-data$boundary\r\n";
+		$header .= $encodetype == 'URLENCODE' ? "Content-Type: appsanmantech/x-www-form-urlencoded\r\n" : "Content-Type: multipart/form-data$boundary\r\n";
 		$header .= "User-Agent: $_SERVER[HTTP_USER_AGENT]\r\n";
 		$header .= "Host: $host:$port\r\n";
 		$header .= 'Content-Length: '.strlen($post)."\r\n";

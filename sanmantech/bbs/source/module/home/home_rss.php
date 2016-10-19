@@ -37,7 +37,7 @@ $blogids = array_keys($data_blog);
 $data_blogfield = C::t('home_blogfield')->fetch_all($blogids);
 
 $charset = $_G['config']['output']['charset'];
-dheader("Content-type: application/xml");
+dheader("Content-type: appsanmantech/xml");
 echo 	"<?xml version=\"1.0\" encoding=\"".$charset."\"?>\n".
 	"<rss version=\"2.0\">\n".
 	"  <channel>\n".

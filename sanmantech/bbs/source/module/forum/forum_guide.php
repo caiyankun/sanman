@@ -27,7 +27,7 @@ if($_GET['rss'] == 1) {
 	}
 	$ttl = 30;
 	$charset = $_G['config']['output']['charset'];
-	dheader("Content-type: application/xml");
+	dheader("Content-type: appsanmantech/xml");
 	echo 	"<?xml version=\"1.0\" encoding=\"".$charset."\"?>\n".
 		"<rss version=\"2.0\">\n".
 		"  <channel>\n".

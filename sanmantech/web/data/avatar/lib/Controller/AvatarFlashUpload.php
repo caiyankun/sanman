@@ -62,7 +62,7 @@ class Controller_AvatarFlashUpload extends Controller_Base{
 			<param name="bgcolor" value="#ffffff" />
 			<param name="movie" value="'.$uc_avatarflash.'" />
 			<param name="menu" value="false" />
-			<embed src="'.$uc_avatarflash.'" quality="high" bgcolor="#ffffff" width="450" height="253" name="mycamera" align="middle" allowScriptAccess="always" allowFullScreen="false" scale="exactfit"  wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+			<embed src="'.$uc_avatarflash.'" quality="high" bgcolor="#ffffff" width="450" height="253" name="mycamera" align="middle" allowScriptAccess="always" allowFullScreen="false" scale="exactfit"  wmode="transparent" type="appsanmantech/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
 		</object>
 		<script type="text/javascript">
 		function updateavatar()
@@ -99,7 +99,7 @@ class Controller_AvatarFlashUpload extends Controller_Base{
         header("Expires: 0");
         header("Cache-Control: private, post-check=0, pre-check=0, max-age=0", FALSE);
         header("Pragma: no-cache");
-        //header("Content-type: application/xml; charset=utf-8");
+        //header("Content-type: appsanmantech/xml; charset=utf-8");
         $this->init_input(common::getgpc('agent', 'G'));
         $uid = $this->input('uid');
         if(empty($uid)) {
@@ -150,7 +150,7 @@ class Controller_AvatarFlashUpload extends Controller_Base{
         header("Expires: 0");
         header("Cache-Control: private, post-check=0, pre-check=0, max-age=0", FALSE);
         header("Pragma: no-cache");
-        header("Content-type: application/xml; charset=utf-8");
+        header("Content-type: appsanmantech/xml; charset=utf-8");
         $this->init_input(common::getgpc('agent'));
         $uid = abs((int)$this->input('uid'));
         if( empty($uid) || 0 == $uid ) {

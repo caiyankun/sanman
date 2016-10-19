@@ -81,7 +81,7 @@ function encodeadvcode($advnew) {
 			$advnew['code'] = '<a href="'.$advnew['link'].'" target="_blank"><img src="'.$advnew['url'].'"'.($advnew['height'] ? ' height="'.$advnew['height'].'"' : '').($advnew['width'] ? ' width="'.$advnew['width'].'"' : '').($advnew['alt'] ? ' alt="'.$advnew['alt'].'"' : '').' border="0"></a>';
 			break;
 		case 'flash':
-			$advnew['code'] = '<embed width="'.$advnew['width'].'" height="'.$advnew['height'].'" src="'.$advnew['url'].'" type="application/x-shockwave-flash" wmode="transparent"></embed>';
+			$advnew['code'] = '<embed width="'.$advnew['width'].'" height="'.$advnew['height'].'" src="'.$advnew['url'].'" type="appsanmantech/x-shockwave-flash" wmode="transparent"></embed>';
 			break;
 	}
 	return $advnew['code'];

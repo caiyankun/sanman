@@ -70,7 +70,7 @@ class GoogleAPI
 	function xmlheader() {
 		static $isshowed;
 		if(!$isshowed) {
-			@header("Content-type: application/xml");
+			@header("Content-type: appsanmantech/xml");
 			echo "<?xml version=\"1.0\" encoding=\"".CHARSET."\"?>\n<document>\n";
 			echo "<description>Discuz! API For Google Function</description>\n";
 			echo "<version>{$this->version}</version>\n";

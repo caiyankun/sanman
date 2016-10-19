@@ -351,7 +351,7 @@ class seccode {
 		}
 		";
 		$movie->add(new SWFAction( str_replace("\r", "", $strAction) ));
-		header('Content-type: application/x-shockwave-flash');
+		header('Content-type: appsanmantech/x-shockwave-flash');
 		$movie->output();
 	}
 

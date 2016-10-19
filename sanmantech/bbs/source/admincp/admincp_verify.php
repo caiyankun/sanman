@@ -408,7 +408,7 @@ EOF;
 
 					define('FOOTERDISABLED', true);
 					ob_end_clean();
-					header("Content-type:application/vnd.ms-excel");
+					header("Content-type:appsanmantech/vnd.ms-excel");
 					header('Content-Encoding: none');
 					header('Content-Disposition: attachment; filename='.$filename);
 					header('Pragma: no-cache');

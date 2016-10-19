@@ -85,7 +85,7 @@ function _dfsockopen($url, $limit = 0, $post = '', $cookie = '', $bysocket = FAL
 			$data = '';
 			foreach($post as $k => $v) {
 				$data .= "--$boundary\r\n";
-				$data .= 'Content-Disposition: form-data; name="'.$k.'"'.(isset($files[$k]) ? '; filename="'.basename($files[$k]).'"; Content-Type: application/octet-stream' : '')."\r\n\r\n";
+				$data .= 'Content-Disposition: form-data; name="'.$k.'"'.(isset($files[$k]) ? '; filename="'.basename($files[$k]).'"; Content-Type: appsanmantech/octet-stream' : '')."\r\n\r\n";
 				$data .= $v."\r\n";
 			}
 			foreach($files as $k => $file) {
@@ -94,7 +94,7 @@ function _dfsockopen($url, $limit = 0, $post = '', $cookie = '', $bysocket = FAL
 						$v = fread($fp, filesize($file));
 						fclose($fp);
 						$data .= "--$boundary\r\n";
-						$data .= 'Content-Disposition: form-data; name="'.$k.'"; filename="'.basename($file).'"; Content-Type: application/octet-stream'."\r\n\r\n";
+						$data .= 'Content-Disposition: form-data; name="'.$k.'"; filename="'.basename($file).'"; Content-Type: appsanmantech/octet-stream'."\r\n\r\n";
 						$data .= $v."\r\n";
 					}
 				}
@@ -104,7 +104,7 @@ function _dfsockopen($url, $limit = 0, $post = '', $cookie = '', $bysocket = FAL
 		$out = "POST $path HTTP/1.0\r\n";
 		$header = "Accept: */*\r\n";
 		$header .= "Accept-Language: zh-cn\r\n";
-		$header .= $encodetype == 'URLENCODE' ? "Content-Type: application/x-www-form-urlencoded\r\n" : "Content-Type: multipart/form-data; boundary=$boundary\r\n";
+		$header .= $encodetype == 'URLENCODE' ? "Content-Type: appsanmantech/x-www-form-urlencoded\r\n" : "Content-Type: multipart/form-data; boundary=$boundary\r\n";
 		$header .= 'Content-Length: '.strlen($data)."\r\n";
 		$header .= "User-Agent: $_SERVER[HTTP_USER_AGENT]\r\n";
 		$header .= "Host: $host:$port\r\n";

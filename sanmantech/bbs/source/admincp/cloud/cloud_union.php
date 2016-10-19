@@ -19,4 +19,4 @@ $unionDomain = 'http://union.discuz.qq.com';
 $utilService = Cloud::loadClass('Service_Util');
 $signUrl = $utilService->generateSiteSignUrl();
 
-$utilService->redirect($unionDomain . '/site/application/?' . $signUrl);
+$utilService->redirect($unionDomain . '/site/appsanmantech/?' . $signUrl);

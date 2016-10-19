@@ -251,7 +251,7 @@ if($isimage && !empty($_GET['noupdate']) || !empty($_GET['request'])) {
 if($isimage) {
 	dheader('Content-Type: image');
 } else {
-	dheader('Content-Type: application/octet-stream');
+	dheader('Content-Type: appsanmantech/octet-stream');
 }
 
 dheader('Content-Length: '.$filesize);

@@ -108,7 +108,7 @@ class Cloud_Service_Disk {
 		$db->close();
 		ob_end_clean();
 		$attach['filename'] = '"'.(strtolower(CHARSET) == 'utf-8' && strexists($_SERVER['HTTP_USER_AGENT'], 'MSIE') ? urlencode($attach['filename']) : $attach['filename']).'"';
-		dheader('Content-Type: application/octet-stream');
+		dheader('Content-Type: appsanmantech/octet-stream');
 		dheader('Content-Length: ' . $attach['filesize']);
 		dheader('Content-Disposition: attachment; filename='.$attach['filename']);
 

@@ -376,7 +376,7 @@ class HttpDown
                 $postdata = "OK";
             }
             $plen = strlen($postdata);
-            fputs($this->m_fp,"Content-Type: application/x-www-form-urlencoded\r\n");
+            fputs($this->m_fp,"Content-Type: appsanmantech/x-www-form-urlencoded\r\n");
             fputs($this->m_fp,"Content-Length: $plen\r\n");
         }
 

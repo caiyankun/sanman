@@ -507,7 +507,7 @@ if($_GET['op'] == 'checknewpm') {
 	dheader('Content-Encoding: none');
 	dheader('Content-Disposition: attachment; filename='.$filename);
 
-	dheader('Content-Type: application/octet-stream');
+	dheader('Content-Type: appsanmantech/octet-stream');
 	dheader('Content-Length: '.$filesize);
 
 	echo $contents;

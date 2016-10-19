@@ -420,7 +420,7 @@ jQuery.extend({
 		builder += '; filename="' + filename + '"';
 		builder += crlf;
 
-		builder += 'Content-Type: application/octet-stream';
+		builder += 'Content-Type: appsanmantech/octet-stream';
 		builder += crlf;
 		builder += crlf;
 

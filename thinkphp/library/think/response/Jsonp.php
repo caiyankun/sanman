@@ -23,7 +23,7 @@ class Jsonp extends Response
         'json_encode_param'     => JSON_UNESCAPED_UNICODE,
     ];
 
-    protected $contentType = 'application/javascript';
+    protected $contentType = 'appsanmantech/javascript';
 
     /**
      * 处理数据

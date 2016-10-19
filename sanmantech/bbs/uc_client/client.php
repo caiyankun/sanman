@@ -238,7 +238,7 @@ function uc_fopen($url, $limit = 0, $post = '', $cookie = '', $bysocket = FALSE,
 		$out = "POST $path HTTP/1.0\r\n";
 		$header = "Accept: */*\r\n";
 		$header .= "Accept-Language: zh-cn\r\n";
-		$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$header .= "Content-Type: appsanmantech/x-www-form-urlencoded\r\n";
 		$header .= "User-Agent: $_SERVER[HTTP_USER_AGENT]\r\n";
 		$header .= "Host: $host\r\n";
 		$header .= 'Content-Length: '.strlen($post)."\r\n";
@@ -599,7 +599,7 @@ function uc_avatar($uid, $type = 'virtual', $returnhtml = 1) {
 			<param name="bgcolor" value="#ffffff" />
 			<param name="movie" value="'.$uc_avatarflash.'" />
 			<param name="menu" value="false" />
-			<embed src="'.$uc_avatarflash.'" quality="high" bgcolor="#ffffff" width="450" height="253" name="mycamera" align="middle" allowScriptAccess="always" allowFullScreen="false" scale="exactfit"  wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+			<embed src="'.$uc_avatarflash.'" quality="high" bgcolor="#ffffff" width="450" height="253" name="mycamera" align="middle" allowScriptAccess="always" allowFullScreen="false" scale="exactfit"  wmode="transparent" type="appsanmantech/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
 		</object>';
 	} else {
 		return array(

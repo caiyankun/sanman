@@ -16,7 +16,7 @@ class mobile_core {
 		global $_G;
 		ob_end_clean();
 		function_exists('ob_gzhandler') ? ob_start('ob_gzhandler') : ob_start();
-		header("Content-type: application/json");
+		header("Content-type: appsanmantech/json");
 		mobile_core::make_cors($_SERVER['REQUEST_METHOD'], REQUEST_METHOD_DOMAIN);
 		$result = mobile_core::json(mobile_core::format($result));
 		if(defined('FORMHASH')) {

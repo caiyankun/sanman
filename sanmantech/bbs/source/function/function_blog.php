@@ -337,7 +337,7 @@ function blog_flash($swf_url, $type='') {
 			</object>';
 	} elseif ($type == 'mp3') {
 		$swf_url = urlencode(str_replace('&amp;', '&', $swf_url));
-		$html = '<object id="audioplayer_SHAREID" height="24" width="290" data="'.STATICURL.'image/common/player.swf" type="application/x-shockwave-flash">
+		$html = '<object id="audioplayer_SHAREID" height="24" width="290" data="'.STATICURL.'image/common/player.swf" type="appsanmantech/x-shockwave-flash">
 			<param value="'.STATICURL.'image/common/player.swf" name="movie"/>
 			<param value="autostart=yes&bg=0xCDDFF3&leftbg=0x357DCE&lefticon=0xF2F2F2&rightbg=0xF06A51&rightbghover=0xAF2910&righticon=0xF2F2F2&righticonhover=0xFFFFFF&text=0x357DCE&slider=0x357DCE&track=0xFFFFFF&border=0xFFFFFF&loader=0xAF2910&soundFile='.$swf_url.'" name="FlashVars"/>
 			<param value="high" name="quality"/>
