@@ -1,0 +1,3 @@
+1）修改config/文件夹下config_global.php 数据库的配置；
+2）把本机的数据库进行备份，在服务器上的数据库进行还原；
+3）后台管理的网址为部署目录下的Admin.php后台用户名和密码admin admin

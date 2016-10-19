@@ -1,0 +1,6 @@
+1）设定include文件夹下config.cache.php通用配置文件中的$cfg_webpath变量和实际部署目录一致,这只是临时的,等正常了以后,要登录后台在数据库中进行相应的修改;
+2）数据库配置文件为：include/conn.inc.php,要对数据库进行修改;
+	2.1)要对Mysql数据库进行备份;
+	2.2)在服务器上对数据库进行恢复;
+3）后台用户名和密码admin admin
+4）前台用户名和密码 testuser testuser
